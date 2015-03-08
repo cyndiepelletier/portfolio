@@ -1,0 +1,317 @@
+.main-content section.about .webdesign {
+    
+}
+
+.title-separator {
+    background-image: url("../img/separateur_titre.png");
+    width: 102px;
+    height: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.Titre {
+   position: absolute;
+  font-size: 36px;
+  font-family: "Champagne & Limousines";
+  font-weight: normal;
+}
+
+/* Accueil */
+
+/*
+.Photo {
+  position: absolute;
+  left: 815px;
+  top: 200px;
+}
+          
+.PELLETIER_Cyndie {
+    position: absolute;
+  font-size: 48px;
+  font-family: "Champagne & Limousines";
+  color: rgb(0, 0, 0);
+  font-weight: bold; 
+  left: 810px;
+  top: 630px;
+}
+
+.Arabesque {
+  position: absolute;
+  left: 949px;
+  top: 760px;
+  width: 73px;
+  height: 30px;
+}
+
+#Etudiante {
+  left: 734.031px;
+  top: 790px;
+}
+
+.Separateur {
+  position: absolute;
+  left: 351px;
+  top: 960px;
+}
+
+.Menu {
+  position: fixed;
+  left: 1698px;
+  top: 120px;
+  width: 190px;
+  height: 729px;
+}
+
+/* A propos */
+
+/*
+#Propos {
+  left: 923.999px;
+  top: 1000px;
+}
+
+.Arabesque2 {
+  position: absolute;
+  left: 949px;
+  top: 1100px;
+  width: 73px;
+  height: 30px;
+}
+
+.Description{
+  font-size: 20px;
+  font-family: "Champagne & Limousines";
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+  position: absolute;
+  left: 573.995px;
+  top: 1150px;
+}
+
+.Separateur1 {
+  position: absolute;
+  left: 351px;
+  top: 1920px;
+}
+
+.WebDesign {
+  position: absolute;
+  left: 374px;
+  top: 1430px;
+  width: 152px;
+  height: 143px;
+  z-index: 2;
+}
+
+.Peinture_w {
+  position: absolute;
+  left: 370px;
+  top: 1420px;
+  width: 182px;
+  height: 173px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.Separateur_w {
+  position: absolute;
+  left: 400px;
+  top: 1620px;
+}
+
+.Titre_w {
+  font-size: 24px;
+  font-family: "Champagne & Limousines";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: absolute;
+  left: 392px;
+  top: 1620px;
+}
+
+.Texte_w {
+  font-size: 20px;
+  font-family: "Champagne & Limousines";
+  text-align: center;
+  font-weight: normal;
+  position: absolute;
+  left: 330px;
+  top: 1680px;
+  width: 240px;
+  height: 124px;
+}
+
+.Team {
+  position: absolute;
+  left: 907px;
+  top: 1430px;
+  width: 134px;
+  height: 140px;
+  z-index: 2;
+}
+
+.Peinture_t {
+  position: absolute;
+  left: 870px;
+  top: 1420px;
+  width: 202px;
+  height: 193px;
+  z-index: 1;
+ opacity: 0.9;
+}
+
+.Separateur_t {
+  position: absolute;
+  left: 928px;
+  top: 1620px;
+}
+
+.Titre_t {
+  font-size: 24px;
+  font-family: "Champagne & Limousines";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: absolute;
+  left: 910px;
+  top: 1620px;
+}
+
+.Texte_t {
+  font-size: 20px;
+  font-family: "Champagne & Limousines";
+  text-align: center;
+  font-weight: normal;
+  position: absolute;
+  left: 860px;
+  top: 1680px;
+  width: 240px;
+  height: 124px;
+}
+
+.Creativite {
+  position: absolute;
+  left: 1403px;
+  top: 1430px;
+  width: 98px;
+  height: 146px;
+  z-index: 2;
+}
+
+.Peinture_c {
+  position: absolute;
+  left: 1350px;
+  top: 1420px;
+  width: 202px;
+  height: 193px;
+  z-index: 1;
+ opacity: 0.9;
+}
+
+.Separateur_c {
+  position: absolute;
+  left: 1405px;
+  top: 1620px;
+}
+
+.Titre_c {
+  font-size: 24px;
+  font-family: "Champagne & Limousines";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: absolute;
+  left: 1410px;
+  top: 1620px;
+}
+
+.Texte_c {
+  font-size: 20px;
+  font-family: "Champagne & Limousines";
+  text-align: center;
+  font-weight: normal;
+  position: absolute;
+  left: 1335px;
+  top: 1680px;
+  width: 240px;
+  height: 124px;
+}
+
+/* Mes travaux */
+
+/*
+#Travaux {
+  left: 900px;
+  top: 1950px;
+}
+
+.Arabesque3 {
+  position: absolute;
+  left: 949px;
+  top: 2050px;
+  width: 73px;
+  height: 30px;
+}
+
+.Separateur2 {
+  position: absolute;
+  left: 351px;
+  top: 2879px;
+}
+*/
+/* Me contacter */
+
+/*
+#Contact {
+  left: 900px;
+  top: 2900px;
+}
+
+.Arabesque4 {
+  position: absolute;
+  left: 949px;
+  top: 3000px;
+  width: 73px;
+  height: 30px;
+}
+
+*/
+
+
+
+
