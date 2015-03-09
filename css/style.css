@@ -5690,12 +5690,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Champagne & Limousines';
   font-style: normal;
   font-weight: normal;
-  src: local('Champagne & Limousines'), url('Champagne & Limousines.woff') format('woff'); }
+  src: local('Champagne & Limousines'), url('../fonts/champagne_limousines.woff') format('woff'); }
 
 @font-face {
   font-family: 'Champagne & Limousines Bold';
   font-weight: bold;
-  src: local('Champagne & Limousines Bold'), url('Champagne & Limousines Bold.woff') format('woff'); }
+  src: local('Champagne & Limousines Bold'), url('../fonts/champagne_limousines_bold.woff') format('woff'); }
 
 .main-content section.home {
   background-image: url("../img/bg-accueil.jpg");
@@ -5715,3 +5715,15 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center; }
   .main-content section.about .presentation p {
     font-size: 1.2rem; }
+.main-content section.about .interests .columns .img {
+  position: relative;
+  margin: 2rem auto;
+  text-align: center; }
+  .main-content section.about .interests .columns .img.webdesign {
+    background-image: url('../img/peinture_w.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 249px;
+    height: 193px; }
+    .main-content section.about .interests .columns .img.webdesign img {
+      margin-top: 28px; }
