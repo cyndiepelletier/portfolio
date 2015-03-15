@@ -9,7 +9,15 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     font-family: "Champagne & Limousines";
 }
-.main-content{
+.main-content {
+    background-image: url("../img/bg-accueil.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    section {
+        min-height: 100vh;
+    }
+
 
     h2.title {
         font-size: 2.25rem;    
@@ -21,6 +29,8 @@ h1, h2, h3, h4, h5, h6, p {
         width : 73px; /* Quand on met une image en CSS (contrairement en HTML), on doit obligatoiremet mettre la taille de la photo sinon ça s'affiche pas. */ 
         height: 30px;
         margin : auto; /* Ca se met automatiquement centré. Si on met 50%, toutle contenu se centre avec un espace vide de chaque coté */ 
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .section-separator {

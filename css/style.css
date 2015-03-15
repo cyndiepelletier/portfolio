@@ -5670,21 +5670,29 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Champagne & Limousines"; }
 
-.main-content h2.title {
-  font-size: 2.25rem;
-  font-weight: normal; }
-.main-content .arabesque-separator {
-  background-image: url("../img/arabesque.png");
-  width: 73px;
-  /* Quand on met une image en CSS (contrairement en HTML), on doit obligatoiremet mettre la taille de la photo sinon ça s'affiche pas. */
-  height: 30px;
-  margin: auto;
-  /* Ca se met automatiquement centré. Si on met 50%, toutle contenu se centre avec un espace vide de chaque coté */ }
-.main-content .section-separator {
-  background-image: url("../img/separateur.jpg");
-  width: 1213px;
-  height: 1px;
-  margin: auto; }
+.main-content {
+  background-image: url("../img/bg-accueil.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .main-content section {
+    min-height: 100vh; }
+  .main-content h2.title {
+    font-size: 2.25rem;
+    font-weight: normal; }
+  .main-content .arabesque-separator {
+    background-image: url("../img/arabesque.png");
+    width: 73px;
+    /* Quand on met une image en CSS (contrairement en HTML), on doit obligatoiremet mettre la taille de la photo sinon ça s'affiche pas. */
+    height: 30px;
+    margin: auto;
+    /* Ca se met automatiquement centré. Si on met 50%, toutle contenu se centre avec un espace vide de chaque coté */
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .main-content .section-separator {
+    background-image: url("../img/separateur.jpg");
+    width: 1213px;
+    height: 1px;
+    margin: auto; }
 
 @font-face {
   font-family: 'Champagne & Limousines';
@@ -5698,9 +5706,6 @@ h1, h2, h3, h4, h5, h6, p {
   src: local('Champagne & Limousines Bold'), url('../fonts/champagne_limousines_bold.woff') format('woff'); }
 
 .main-content section.home {
-  background-image: url("../img/bg-accueil.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   text-align: center; }
   .main-content section.home .profil {
     padding-top: 100px; }
@@ -5711,19 +5716,29 @@ h1, h2, h3, h4, h5, h6, p {
 .main-navigation {
   display: none; }
 
-.main-content section.about .presentation {
+.main-content section.about {
   text-align: center; }
-  .main-content section.about .presentation p {
-    font-size: 1.2rem; }
-.main-content section.about .interests .columns .img {
-  position: relative;
-  margin: 2rem auto;
-  text-align: center; }
-  .main-content section.about .interests .columns .img.webdesign {
-    background-image: url('../img/peinture_w.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 249px;
-    height: 193px; }
-    .main-content section.about .interests .columns .img.webdesign img {
+  .main-content section.about .presentation {
+    margin-top: 60px; }
+    .main-content section.about .presentation p {
+      font-size: 1.2rem; }
+  .main-content section.about .interests p {
+    width: 170px;
+    margin: auto; }
+  .main-content section.about .interests .columns .img {
+    position: relative;
+    margin: 2rem auto;
+    text-align: center; }
+    .main-content section.about .interests .columns .img img {
       margin-top: 28px; }
+  .main-content section.about .interests .columns .title_separator {
+    background-image: url("../img/separateur_titre.png");
+    height: 1px;
+    width: 102px;
+    margin: auto;
+    margin-bottom: 80px; }
+  .main-content section.about .interests .columns h4.title_part {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; }
