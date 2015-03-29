@@ -52,7 +52,7 @@
                 </div>
                 
                 <div class="interests row">
-                    <div class="columns small-12 large-4">
+                    <div class="columns small-12 medium-4">
                         <div class="img">
                             <img src="img/webdesign.png" height="153px" width="206px">
                         </div>
@@ -63,7 +63,7 @@
                     </div>
 
                     
-                    <div class="columns small-12 large-4">
+                    <div class="columns small-12 medium-4">
                         <div class="img">
                             <img src="img/team.png" height="164px" width="175px">
                         </div>
@@ -73,7 +73,7 @@
                         <p>J'aime le travail en équipe. Cela permet de regrouper différentes compétences et avis pour faire avancer le projet le plus loin possible.</p>
                     </div>
 
-                    <div class="columns small-12 large-4">
+                    <div class="columns small-12 medium-4">
                         <div class="img">
                             <img src="img/creativite.png" height="167px" width="90px">
                         </div>
@@ -90,12 +90,103 @@
 
         <!-- Mes travaux -->
 
-            <section>
-                <h1 class="Titre" id="Travaux"> Mes travaux </h1>
+            <section class="work">
 
-                <img src="img/Arabesque.png" class="Arabesque3">
+                <h2 class="title">Mes travaux</h2>
+                <div class="arabesque-separator"></div>
 
-                <img src="img/Separateur.jpg" class="Separateur2">
+                <ul class="filters">
+                    <li class="filter" data-filter="all">Tous</li>
+                    <li class="filter" data-filter=".web">WebDesign</li>
+                    <li class="filter" data-filter=".logo">Logo</li>
+                    <li class="filter" data-filter=".print">Print</li>
+                    <li class="filter" data-filter=".diverse">Divers</li>
+                </ul>
+
+                <div class="work-container">
+                    <div class="mix web print">
+                        <div class="work">
+                            <img src="http://img.wikinut.com/img/gycf69_-6rv_5fol/jpeg/0/Best-Friends-Img-Src:Image:-FreeDigitalPhotos.net.jpeg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix web logo">
+                        <div class="work">
+                            <img src="http://images.visitcanberra.com.au/images/canberra_hero_image.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix web print">
+                        <div class="work">
+                            <img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix logo diverse">
+                        <div class="work">
+                            <img src="http://blog.bnf.fr/uploads/lecteurs/2012/10/nouvelles_images.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix logo">
+                        <div class="work">
+                            <img src="http://www.gettyimages.co.uk/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix logo">
+                        <div class="work">
+                            <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix diverse">
+                        <div class="work">
+                            <img src="http://www.gettyimages.fr/CMS/Pages/Embed_Frontdoor/StaticContent/hero_travel_482206371.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix diverse logo">
+                        <div class="work">
+                            <img src="http://img.gettyimageslatam.com/public/userfiles/redesign/images/landing/home/img_entry_002.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix diverse print">
+                        <div class="work">
+                            <img src="http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/12/multicoloured_view_of_supernova_remnant/15172784-1-eng-GB/Multicoloured_view_of_supernova_remnant_node_full_image_2.jpg">
+                            <div class="info">
+                                <h2>coucou</h2>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
         <!-- Me contacter -->
@@ -110,9 +201,11 @@
         <footer>
         </footer>
 
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
         <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function(){
-                document.getElementsByTagName("section").style = "height:" + window.height + "px";
+            $(function(){
+                $('.work-container').mixItUp();
             });
         </script>
     </body>
