@@ -12,5 +12,8 @@
   ],
   "dependencies": {
     "foundation": "zurb/bower-foundation#~5.5.1"
+  },
+  "devDependencies": {
+    "mixitup": "~2.1.7"
   }
 }
