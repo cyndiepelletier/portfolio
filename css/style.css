@@ -5679,7 +5679,8 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center; }
   .main-content h2.title {
     font-size: 2.25rem;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-top: 40px; }
   .main-content .arabesque-separator {
     background-image: url("../img/arabesque.png");
     width: 73px;
@@ -5741,14 +5742,16 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 20px; }
 
 .main-content section.work ul.filters {
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 1.3rem; }
   .main-content section.work ul.filters li {
     cursor: pointer;
     position: relative;
     margin: 1rem;
     display: inline-block; }
   .main-content section.work ul.filters li.active {
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    font-weight: bold; }
 .main-content section.work .work-container .mix {
   display: none;
   margin: 1rem 3%;
@@ -5811,10 +5814,17 @@ h1, h2, h3, h4, h5, h6, p {
     transform: translateY(0); }
 @media only screen and (min-width:40.063em) {
   .main-content section.work .work-container .mix {
-    width: 43%; } }
+    width: 43%;
+    padding-bottom: 10px; } }
 @media only screen and (min-width:64.063em) {
   .main-content section.work .work-container {
-    margin: 0 150px; } }
+    margin: 0 150px;
+    padding-bottom: 40px; } }
 @media only screen and (min-width:90.063em) {
   .main-content section.work .work-container .mix {
     width: 27%; } }
+
+.main-content section.contact .data {
+  margin-top: 60px; }
+  .main-content section.contact .data p {
+    font-size: 1.2rem; }

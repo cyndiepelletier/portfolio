@@ -2,17 +2,19 @@
     
     ul.filters {
         list-style-type: none;
+        font-size: 1.3rem;
 
         li {
             cursor: pointer;
             position: relative;
             margin: 1rem;
             display: inline-block;
-
         }
 
         li.active {
             border-bottom: 1px solid black;
+            font-weight: bold;
+
         }
     }
 
@@ -101,19 +103,22 @@
     @media #{$medium-up} {
         .work-container .mix {
             width: 43%;
+            padding-bottom:10px;
         }
     }
 
     @media #{$large-up} {
         .work-container {
             margin: 0 150px;
+            padding-bottom: 40px;
         }
 
     }
 
     @media #{$xlarge-up} {
         .work-container .mix {
-            width: 27%
+            width: 27%;
         }
     }
-}
+
+
