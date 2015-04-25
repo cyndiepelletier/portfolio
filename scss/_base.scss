@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5, h6, p {
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
+    transition: all 1s;
+    left: 0;
 
     section {
         min-height: 100vh;

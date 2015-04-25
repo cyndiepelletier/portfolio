@@ -5673,7 +5673,9 @@ h1, h2, h3, h4, h5, h6, p {
   background-image: url("../img/bg-accueil.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  transition: all 1s;
+  left: 0; }
   .main-content section {
     min-height: 100vh;
     text-align: center; }
@@ -5726,29 +5728,36 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 100px;
     margin-bottom: 100px; }
 
+body.menu-open nav.navigation {
+  left: 0; }
+body.menu-open .main-content {
+  left: 200px; }
+
 nav.navigation {
-  background-color: #ffffff;
   margin-top: 0;
   margin-left: 0;
   width: 200px;
   height: 100%;
   position: fixed;
-  opacity: 0.35;
-  z-index: 1; }
+  z-index: 1;
+  background-color: black;
+  transition: left 1s ease;
+  left: -200px; }
   nav.navigation ul.nav {
     list-style-type: none;
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 60px; }
     nav.navigation ul.nav li {
+      color: #9ac1ea;
       line-height: 50px;
-      text-align: center;
+      text-align: left;
       width: 100%; }
       nav.navigation ul.nav li a {
         color: inherit; }
   nav.navigation li.active a {
     padding-bottom: 5px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid white; }
 
 .hamburger {
   z-index: 1;
@@ -5762,15 +5771,28 @@ nav.navigation {
   nav.navigation {
     display: block;
     width: 100%;
-    height: 50px; }
+    height: 50px;
+    opacity: 0.35;
+    background-color: #ffffff;
+    left: 0;
+    transition: none; }
     nav.navigation ul.nav {
       margin-top: 0; }
       nav.navigation ul.nav li {
         width: 24%;
         display: inline-block;
-        margin-top: 0; }
+        text-align: center;
+        margin-top: 0;
+        color: black; }
+      nav.navigation ul.nav li.active a {
+        border-bottom: 1px solid black; }
   .hamburger {
-    display: none; } }
+    display: none; }
+  body.menu-open nav.navigation {
+    transition: none; }
+  body.menu-open .main-content {
+    left: 0;
+    transition: none; } }
 
 .main-content section.about .presentation {
   margin-top: 60px; }

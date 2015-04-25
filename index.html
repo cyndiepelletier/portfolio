@@ -295,6 +295,10 @@
                     $(this).addClass('active');
                 });
                 $('.work-container').mixItUp();
+
+                $('.hamburger').on('click', function(){
+                    $('body').toggleClass('menu-open');
+                })
             });
         </script>
     </body>
