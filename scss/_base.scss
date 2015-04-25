@@ -1,5 +1,4 @@
 body {
-   
     font-family: "Champagne & Limousines";
     background-image:url(../img/bg.jpg);
     background-repeat: repeat;
@@ -13,6 +12,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-image: url("../img/bg-accueil.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
 
     section {
         min-height: 100vh;
@@ -28,9 +28,9 @@ h1, h2, h3, h4, h5, h6, p {
 
     .arabesque-separator {
         background-image: url("../img/arabesque.png");
-        width : 73px; /* Quand on met une image en CSS (contrairement en HTML), on doit obligatoiremet mettre la taille de la photo sinon ça s'affiche pas. */ 
+        width : 73px;  
         height: 30px;
-        margin : auto; /* Ca se met automatiquement centré. Si on met 50%, toutle contenu se centre avec un espace vide de chaque coté */ 
+        margin : auto; 
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -40,5 +40,18 @@ h1, h2, h3, h4, h5, h6, p {
         width: 1213px;
         height: 1px;
         margin: auto;
+        margin-top: 40px;
     }
+}
+
+.footer-bg {
+    position: absolute;    
+    background-image: url("../img/bg-accueil.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
 }

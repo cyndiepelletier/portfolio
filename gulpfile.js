@@ -10,7 +10,7 @@ gulp.task('sass', function () {
     gulp.src('./scss/**/*.scss')        
         .pipe(plumber())
         .pipe(sass({ 
-        	includePaths : ['./bower_components/foundation/scss'] 
+        	includePaths : ['./scss', './bower_components/foundation/scss'] 
         }))
         .pipe(connect.reload())
         .pipe(gulp.dest('./css'));

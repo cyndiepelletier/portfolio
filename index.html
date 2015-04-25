@@ -12,21 +12,35 @@
     </head>
     <body>
 
-        <nav class="main-navigation"> <!-- menu -->
-            <ul>
-                <li></li>
-            </ul>
+        <nav class="navigation"> <!-- menu -->
+                <ul class="nav">
+                    <li class="active">
+                        <a href="#home">Accueil</a>
+                    </li>
+                    <li>
+                         <a href="#about">A propos</a>
+                     </li>
+                    <li>
+                        <a href="#work">Mes travaux</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Me contacter</a>
+                    </li>
+                </ul>
         </nav>
 
-        <div class="main-content"> <!-- div qui contient tout le contenu du site (sauf footer) -->
+        <div class="hamburger">
+            &#9776;
+        </div>
 
+        <div class="main-content"> <!-- div qui contient tout le contenu du site (sauf footer) -->
             <!-- Accueil -->
 
-            <section class="home">
+            <section class="home" id="home">
 
                 <div class="profil"> <!-- Regroupement des éléments car ils on presque les même proporiété. -->
-                    <img src="img/photo2.png" class="picture" alt="Photo">
-                    <h1 class="title"> Cyndie Pelletier</h1>
+                    <img src="img/nom.png" class="picture" alt="Photo">
+   <!--                 <h1 class="title"> Cyndie Pelletier</h1> -->
 
                     <div class="arabesque-separator"></div> <!-- Mettre l'image dans une div permet de pas charger l'image à chaque fois. Au lieu de mettre l'image en HTML, on la met dans la div / CSS -->
 
@@ -39,7 +53,7 @@
             <div class="section-separator"></div> <!-- Idem que pour l'arabesque : on l'a met dans une div / CSS et non dans l'HTML pour par que ça ça charge l'image à chaque fois. Div en dehors de la section car elle sépare les deux sections -->
 
         <!-- A propos -->
-            <section class="about">
+            <section class="about" id="about">
 
                 <div class="presentation">
                     <h2 class="title"> A propos </h2>
@@ -90,10 +104,14 @@
 
         <!-- Mes travaux -->
 
-            <section class="work">
+            <section class="work" id="work">
 
                 <h2 class="title">Mes travaux</h2>
                 <div class="arabesque-separator"></div>
+
+                <div class="mark1"> <img src="img/tache_1.png"> </div>
+                <div class="mark2"> <img src="img/tache_2.png"> </div>
+                <div class="mark3"> <img src="img/tache_3.png"> </div>
 
                 <ul class="filters">
                     <li class="filter" data-filter="all">Tous</li>
@@ -232,27 +250,50 @@
 
         <!-- Me contacter -->
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="data">
                     <h2 class="title"> Me contacter </h2>
-                    <div class="arabesque-separator"></div>
+                        <div class="arabesque-separator"></div>
                     <p>  06 80 01 34 45  </p>
                     <p>  cyndie.pelletier@gmail.com </p>
                 </div>
+                <div class="social">
+                    <a href="fr.linkedin.com/in/cyndiepelletier" class="linkedin" target="_blank"> </a> 
+                    <a href="" class="twitter"> </a>
+                    <a href="" class="git"> </a>
+                    <a href="cyndie.pelletier@gmail.com" class="gmail" target="_blank"> </a>
+                    <a href="" class="insta"> </a>
+                    <a href="" class="pinterest"></a>
+                 </div>
+
+                 <div class="cv">  
+                        <a href="img/work/CV PELLETIER Cyndie.pdf" target="_blank"> Télécharger mon CV </a>
+                </div>
+
             </section>
-
-
-
+            
+            <div class="footer-bg">
+            </div>
+            <footer>
+                 <div class="footer">
+                    <p> 2015 &copy; Cyndie Pelletier </p>
+                </div>
+            </footer>
 
         </div>
 
-        <footer>
-        </footer>
-
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
+        
         <script type="text/javascript">
             $(function(){
+
+                $('.navigation ul.nav li').click(function(){
+                    $('.navigation ul.nav li').each(function(){
+                        $(this).removeClass('active');
+                    })
+                    $(this).addClass('active');
+                });
                 $('.work-container').mixItUp();
             });
         </script>

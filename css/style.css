@@ -1,4 +1,3 @@
-@charset "UTF-8";
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -5673,7 +5672,8 @@ h1, h2, h3, h4, h5, h6, p {
 .main-content {
   background-image: url("../img/bg-accueil.jpg");
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
   .main-content section {
     min-height: 100vh;
     text-align: center; }
@@ -5684,17 +5684,27 @@ h1, h2, h3, h4, h5, h6, p {
   .main-content .arabesque-separator {
     background-image: url("../img/arabesque.png");
     width: 73px;
-    /* Quand on met une image en CSS (contrairement en HTML), on doit obligatoiremet mettre la taille de la photo sinon ça s'affiche pas. */
     height: 30px;
     margin: auto;
-    /* Ca se met automatiquement centré. Si on met 50%, toutle contenu se centre avec un espace vide de chaque coté */
     margin-top: 40px;
     margin-bottom: 40px; }
   .main-content .section-separator {
     background-image: url("../img/separateur.jpg");
     width: 1213px;
     height: 1px;
-    margin: auto; }
+    margin: auto;
+    margin-top: 40px; }
+
+.footer-bg {
+  position: absolute;
+  background-image: url("../img/bg-accueil.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: rotate(180deg); }
 
 @font-face {
   font-family: 'Champagne & Limousines';
@@ -5712,9 +5722,55 @@ h1, h2, h3, h4, h5, h6, p {
   .main-content section.home .profil h1.title {
     font-weight: bold;
     font-size: 3rem; }
+  .main-content section.home .profil .picture {
+    margin-top: 100px;
+    margin-bottom: 100px; }
 
-.main-navigation {
-  display: none; }
+nav.navigation {
+  background-color: #ffffff;
+  margin-top: 0;
+  margin-left: 0;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  opacity: 0.35;
+  z-index: 1; }
+  nav.navigation ul.nav {
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 60px; }
+    nav.navigation ul.nav li {
+      line-height: 50px;
+      text-align: center;
+      width: 100%; }
+      nav.navigation ul.nav li a {
+        color: inherit; }
+  nav.navigation li.active a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black; }
+
+.hamburger {
+  z-index: 1;
+  cursor: pointer;
+  position: fixed;
+  color: white;
+  font-size: 2rem;
+  margin-left: 2rem; }
+
+@media only screen and (min-width:40.063em) {
+  nav.navigation {
+    display: block;
+    width: 100%;
+    height: 50px; }
+    nav.navigation ul.nav {
+      margin-top: 0; }
+      nav.navigation ul.nav li {
+        width: 24%;
+        display: inline-block;
+        margin-top: 0; }
+  .hamburger {
+    display: none; } }
 
 .main-content section.about .presentation {
   margin-top: 60px; }
@@ -5752,6 +5808,27 @@ h1, h2, h3, h4, h5, h6, p {
   .main-content section.work ul.filters li.active {
     border-bottom: 1px solid black;
     font-weight: bold; }
+.main-content section.work .mark1 {
+  z-index: 0;
+  position: absolute; }
+  .main-content section.work .mark1 img {
+    height: 280px;
+    margin-top: 380px;
+    margin-left: 480px; }
+.main-content section.work .mark2 {
+  z-index: 0;
+  position: absolute; }
+  .main-content section.work .mark2 img {
+    height: 280px;
+    margin-top: 200px;
+    margin-left: 1300px; }
+.main-content section.work .mark3 {
+  z-index: 0;
+  position: absolute; }
+  .main-content section.work .mark3 img {
+    height: 280px;
+    margin-top: -200px;
+    margin-left: -10px; }
 .main-content section.work .work-container .mix {
   display: none;
   margin: 1rem 3%;
@@ -5760,7 +5837,8 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     cursor: pointer;
     max-height: 200px;
-    overflow: hidden; }
+    overflow: hidden;
+    border: 1px solid #CECECE; }
     .main-content section.work .work-container .mix .work img {
       width: auto;
       height: auto; }
@@ -5778,7 +5856,8 @@ h1, h2, h3, h4, h5, h6, p {
       width: 100%;
       color: #484c61;
       transition: opacity 0.35s, transform 0.35s, color 0.35s;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      font-size: 1.5rem; }
     .main-content section.work .work-container .mix .work .info p {
       position: absolute;
       bottom: 0;
@@ -5797,7 +5876,7 @@ h1, h2, h3, h4, h5, h6, p {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+      background: linear-gradient(to bottom, rgba(7, 215, 246, 0) 0%, rgba(9, 148, 169, 0.4) 75%);
       content: '';
       opacity: 0;
       transform: translateY(50%);
@@ -5814,17 +5893,71 @@ h1, h2, h3, h4, h5, h6, p {
     transform: translateY(0); }
 @media only screen and (min-width:40.063em) {
   .main-content section.work .work-container .mix {
-    width: 43%;
-    padding-bottom: 10px; } }
+    width: 43%; } }
 @media only screen and (min-width:64.063em) {
   .main-content section.work .work-container {
-    margin: 0 150px;
-    padding-bottom: 40px; } }
+    margin: 0 150px; } }
 @media only screen and (min-width:90.063em) {
   .main-content section.work .work-container .mix {
     width: 27%; } }
 
 .main-content section.contact .data {
-  margin-top: 60px; }
+  margin-top: 40px; }
   .main-content section.contact .data p {
-    font-size: 1.2rem; }
+    padding-top: 30px;
+    font-size: 1.3rem; }
+.main-content section.contact .social {
+  padding-top: 70px; }
+.main-content section.contact .linkedin {
+  background-image: url("../img/logos/linkedin.png");
+  height: 73px;
+  width: 73px; }
+.main-content section.contact .twitter {
+  background-image: url("../img/logos/twitter.png");
+  height: 73px;
+  width: 73px; }
+.main-content section.contact .git {
+  background-image: url("../img/logos/git.png");
+  height: 73px;
+  width: 73px; }
+.main-content section.contact .gmail {
+  background-image: url("../img/logos/gmail.png");
+  height: 73px;
+  width: 73px; }
+.main-content section.contact .insta {
+  background-image: url("../img/logos/insta.png");
+  height: 73px;
+  width: 73px; }
+.main-content section.contact .pinterest {
+  background-image: url("../img/logos/pinterest.png");
+  height: 73px;
+  width: 73px; }
+.main-content section.contact a {
+  margin: 1rem;
+  display: inline-block; }
+.main-content section.contact a:hover.linkedin {
+  background-image: url("../img/logos/hover_linkedin.png"); }
+.main-content section.contact a:hover.twitter {
+  background-image: url("../img/logos/hover_twitter.png"); }
+.main-content section.contact a:hover.git {
+  background-image: url("../img/logos/hover_git.png"); }
+.main-content section.contact a:hover.gmail {
+  background-image: url("../img/logos/hover_gmail.png"); }
+.main-content section.contact a:hover.insta {
+  background-image: url("../img/logos/hover_insta.png"); }
+.main-content section.contact a:hover.pinterest {
+  background-image: url("../img/logos/hover_pinterest.png"); }
+.main-content section.contact .cv {
+  margin-top: 120px; }
+  .main-content section.contact .cv a {
+    font-size: 1.3rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    color: inherit;
+    text-decoration: none; }
+
+.footer p {
+  font-weight: bold;
+  text-align: center;
+  margin: 0; }
