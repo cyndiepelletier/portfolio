@@ -18,16 +18,16 @@
         <nav class="navigation hidden"> <!-- menu -->
                 <ul class="nav">
                     <li class="active" class="home">
-                        <a href="#home"><span class="text">Accueil</span></a>
+                        <a data-href="#home"><span class="text">Accueil</span></a>
                     </li>
                     <li class="about">
-                         <a href="#about"><span class="text">A propos</span></a>
+                         <a data-href="#about"><span class="text">A propos</span></a>
                      </li>
                     <li class="work">
-                        <a href="#work"><span class="text">Mes travaux</span></a>
+                        <a data-href="#work"><span class="text">Mes travaux</span></a>
                     </li>
                     <li class="contact">
-                        <a href="#contact"><span class="text">Me contacter</span></a>
+                        <a data-href="#contact"><span class="text">Me contacter</span></a>
                     </li>
                 </ul>
         </nav>
@@ -47,7 +47,7 @@
                     <h1> Cyndie Pelletier</h1>
                     <h2> A la recherche d'un contrat de professionnalisation en tant qu'UX/UI Design</h2>
 
-                    <a href="#about" class="arrow"></a>
+                    <a class="arrow"></a>
                 </div>
 
             </section>
@@ -284,7 +284,24 @@
         <script type="text/javascript">
             $(function(){
 
+                $('.arrow').click(function(){
+                    $('html, body').animate({
+                        scrollTop:$('#about').offset().top
+                    }, 'slow');
+
+                    $('.navigation ul.nav li').each(function(){
+                        $(this).removeClass('active');
+                    })
+                    $('li.about').addClass('active');
+                })
+
                 $('.navigation ul.nav li').click(function(){
+
+                    var id = $(this).find('a').attr('data-href');
+                    $('html, body').animate({
+                        scrollTop:$(id).offset().top
+                    }, 'slow');
+
                     $('.navigation ul.nav li').each(function(){
                         $(this).removeClass('active');
                     })
