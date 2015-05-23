@@ -15,19 +15,19 @@
     </head>
     <body>
 
-        <nav class="navigation"> <!-- menu -->
+        <nav class="navigation hidden"> <!-- menu -->
                 <ul class="nav">
-                    <li class="active">
-                        <a href="#home">Accueil</a>
+                    <li class="active" class="home">
+                        <a href="#home"><span class="text">Accueil</span></a>
                     </li>
-                    <li>
-                         <a href="#about">A propos</a>
+                    <li class="about">
+                         <a href="#about"><span class="text">A propos</span></a>
                      </li>
-                    <li>
-                        <a href="#work">Mes travaux</a>
+                    <li class="work">
+                        <a href="#work"><span class="text">Mes travaux</span></a>
                     </li>
-                    <li>
-                        <a href="#contact">Me contacter</a>
+                    <li class="contact">
+                        <a href="#contact"><span class="text">Me contacter</span></a>
                     </li>
                 </ul>
         </nav>
@@ -36,26 +36,23 @@
             &#9776;
         </div>
 
-        <div class="main-content"> 
+        <div class="main-content">
             <!-- Accueil -->
 
             <section class="home" id="home">
 
-                <div class="profil"> 
-                    <h1 class="home"> Cyndie Pelletier</h1> 
-                    <h2 class="home"> A la recherche d'un contrat de professionnalisation en tant qu'UX/UI Design</h2> 
+                <div class="profil">
+                    <h1> Cyndie Pelletier</h1>
+                    <h2> A la recherche d'un contrat de professionnalisation en tant qu'UX/UI Design</h2>
 
-                    <div class="picture">               
-                        <a href="#about" class="arrow"></a>
-                    </div>
-
+                    <a href="#about" class="arrow"></a>
                 </div>
 
             </section>
 
-            <div class="section-separator" id="about"></div> 
+            <div class="section-separator" id="about"></div>
 
-        <!-- A propos --> 
+        <!-- A propos -->
             <section class="about"  >
 
                 <div class="presentation">
@@ -67,7 +64,7 @@
                         Si vous êtes curieux de connaître mes compétences, faites un tour plus bas pour découvrir mes projets, mon CV et pourquoi pas <strong>me contacter</strong>.
                     </p>
                 </div>
-                
+
                 <div class="interests row">
                     <div class="columns small-12 medium-4">
                         <div class="img">
@@ -79,7 +76,7 @@
                         <p>Passionée de WebDesign, j'aime élaborer une ergonomie intuitive pour l'utilisateur en essayant de lier créativité et originalité.</p>
                     </div>
 
-                    
+
                     <div class="columns small-12 medium-4">
                         <div class="img">
                             <img src="img/team.png" height="164px" width="175px">
@@ -97,7 +94,7 @@
                         <div class="title_separator"></div>
 
                         <h4 class="title_part"> Créativité </h4>
-                        <p>La curiosité, l'imagination et l'envie de toujours faire mieux sont mes ingrédients personnels pour vous satisfaire.</p> 
+                        <p>La curiosité, l'imagination et l'envie de toujours faire mieux sont mes ingrédients personnels pour vous satisfaire.</p>
                 </div>
 
             </section>
@@ -149,7 +146,7 @@
                                     <p>Photoshop</p>
                                 </div>
                             </div>
-                    </div>                        
+                    </div>
                     <div class="mix print">
                         <a href="img/work/affiche_cinema.pdf" target="_blank">
                             <div class="work">
@@ -159,8 +156,8 @@
                                     <p>Photoshop</p>
                                 </div>
                             </div>
-                         </a>   
-                    </div>                    
+                         </a>
+                    </div>
                     <div class="mix diverse">
                         <a href="img/work/blender.jpg" target="_blank">
                             <div class="work">
@@ -214,7 +211,7 @@
                                     <p>Première Pro</p>
                                 </div>
                             </div>
-                        </a>  
+                        </a>
                     </div>
                      <div class="mix diverse">
                         <a href="https://youtu.be/bQsW-XCwViE" target="_blank">
@@ -254,7 +251,7 @@
                     <p>  cyndie.pelletier@gmail.com </p>
                 </div>
                 <div class="social">
-                    <a href="https://fr.linkedin.com/in/cyndiepelletier" class="linkedin" target="_blank"> </a> 
+                    <a href="https://fr.linkedin.com/in/cyndiepelletier" class="linkedin" target="_blank"> </a>
                     <a href="https://twitter.com/CyndiePelletier" class="twitter" target="_blank"> </a>
                     <a href="https://github.com/cyndiepelletier/portfolio" class="git" target="_blank"> </a>
                     <a href="mailto:cyndie.pelletier@gmail.com" class="gmail" target="_blank"> </a>
@@ -262,12 +259,12 @@
                     <a href="https://fr.pinterest.com/pelletiercyndie/" class="pinterest" target="_blank"></a>
                  </div>
 
-                 <div class="cv">  
+                 <div class="cv">
                         <a href="img/work/CV PELLETIER Cyndie.pdf" target="_blank"> Télécharger mon CV </a>
                 </div>
 
             </section>
-            
+
             <div class="footer-bg">
             </div>
             <footer>
@@ -280,7 +277,8 @@
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
-        
+        <script src="bower_components/waypoint/noframework.waypoints.min.js"></script>
+
         <script type="text/javascript">
             $(function(){
 
@@ -295,7 +293,19 @@
                 $('.hamburger').on('click', function(){
                     $('body').toggleClass('menu-open');
                 })
+
+                new Waypoint({
+                    element: document.getElementById('about'),
+                    handler: function(direction) {
+                        if (direction == 'down') {
+                            $('.navigation').removeClass('hidden')
+                        } else {
+                            $('.navigation').addClass('hidden');
+                        }
+                    }
+                })
             });
+
 
 
         </script>

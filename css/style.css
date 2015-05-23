@@ -5678,7 +5678,6 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 1s;
   left: 0; }
   .main-content section {
-    min-height: 100vh;
     text-align: center; }
   .main-content h2.title {
     font-size: 1.8rem;
@@ -5718,6 +5717,10 @@ h1, h2, h3, h4, h5, h6, p {
     height: 1px;
     margin-top: 40px; } }
 
+.hidden {
+  opacity: 0;
+  display: none !important; }
+
 @font-face {
   font-family: 'Champagne & Limousines';
   font-style: normal;
@@ -5729,28 +5732,29 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: bold;
   src: local('Champagne & Limousines Bold'), url('../fonts/champagne_limousines_bold.woff') format('woff'); }
 
-.main-content section.home .profil {
-  padding-top: 100px; }
-  .main-content section.home .profil h1.home {
-    font-family: 'Rouge Script', cursive;
-    font-weight: bold;
-    font-size: 9rem;
-    letter-spacing: 8px;
-    margin-top: 130px;
-    margin-bottom: 270px; }
-  .main-content section.home .profil h2.home {
-    font-size: 2rem; }
-  .main-content section.home .profil .picture {
-    position: relative;
-    margin: auto;
-    margin-top: 130px; }
-  .main-content section.home .profil .arrow {
-    position: absolute;
-    background-image: url("../img/arrow.png");
-    height: 24px;
-    width: 28px; }
-  .main-content section.home .profil a:hover.arrow {
-    background-image: url("../img/hover_arrow.png"); }
+.main-content section.home {
+  position: relative;
+  min-height: 100vh; }
+  .main-content section.home .profil {
+    min-height: 300px; }
+    .main-content section.home .profil h1 {
+      font-family: 'Rouge Script', cursive;
+      font-weight: bold;
+      font-size: 120px;
+      letter-spacing: 8px;
+      margin: 0;
+      padding-top: 130px; }
+    .main-content section.home .profil h2 {
+      margin-top: 100px;
+      font-size: 30px; }
+    .main-content section.home .profil .arrow {
+      position: absolute;
+      background-image: url("../img/arrow.png");
+      height: 24px;
+      width: 28px;
+      bottom: 20px; }
+    .main-content section.home .profil a:hover.arrow {
+      background-image: url("../img/hover_arrow.png"); }
 
 body.menu-open nav.navigation {
   left: 0; }
@@ -5765,7 +5769,7 @@ nav.navigation {
   position: fixed;
   z-index: 1;
   background-color: #000000;
-  transition: left 1s ease;
+  transition: 1s ease;
   left: -180px; }
   nav.navigation ul.nav {
     list-style-type: none;
@@ -5779,8 +5783,11 @@ nav.navigation {
       width: 100%;
       font-weight: normal; }
       nav.navigation ul.nav li a {
+        width: 100%;
+        display: block;
+        height: 100%;
         color: inherit; }
-  nav.navigation li.active a {
+  nav.navigation li.active a span.text {
     padding-bottom: 5px;
     border-bottom: 1px solid white; }
 
@@ -5797,9 +5804,10 @@ nav.navigation {
     display: block;
     width: 100%;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(253, 253, 253, 0.9);
     box-shadow: 0px 1px 5px 0px #9b9b9b;
     left: 0;
+    top: 0;
     transition: none; }
     nav.navigation ul.nav {
       margin-top: 0; }
@@ -5810,7 +5818,7 @@ nav.navigation {
         margin-top: 0;
         color: #000;
         opacity: none; }
-      nav.navigation ul.nav li.active a {
+      nav.navigation ul.nav li.active a span.text {
         border-bottom: 1px solid #000; }
   .hamburger {
     display: none; }
