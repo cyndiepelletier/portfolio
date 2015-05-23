@@ -9,7 +9,8 @@ body.menu-open {
 }
 
 nav.navigation {
-    
+
+    display: block;
     margin-top: 0;
     margin-left: 0;
     width: 180px;
@@ -59,9 +60,16 @@ nav.navigation {
     font-size: 2rem;
     margin-left: 2rem;
 }
+
 @media #{$medium-up} {
 
     nav.navigation {
+
+        &.hidden {
+            opacity: 0;
+            display: none!important;
+        }
+
         display: block;
         width: 100%;
         height: 50px;

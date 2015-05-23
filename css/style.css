@@ -5717,10 +5717,6 @@ h1, h2, h3, h4, h5, h6, p {
     height: 1px;
     margin-top: 40px; } }
 
-.hidden {
-  opacity: 0;
-  display: none !important; }
-
 @font-face {
   font-family: 'Champagne & Limousines';
   font-style: normal;
@@ -5762,6 +5758,7 @@ body.menu-open .main-content {
   left: 180px; }
 
 nav.navigation {
+  display: block;
   margin-top: 0;
   margin-left: 0;
   width: 180px;
@@ -5809,6 +5806,9 @@ nav.navigation {
     left: 0;
     top: 0;
     transition: none; }
+    nav.navigation.hidden {
+      opacity: 0;
+      display: none !important; }
     nav.navigation ul.nav {
       margin-top: 0; }
       nav.navigation ul.nav li {
