@@ -4,15 +4,39 @@
     .profil {
         padding-top : 100px;
 
-        h1.title {
+        h1.home {
+            font-family: 'Rouge Script', cursive;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 9rem;
+            letter-spacing: 8px;
+            margin-top: 130px;
+            margin-bottom: 270px;
         }
 
-        .picture{
-		  margin-top: 100px;
-          margin-bottom: 100px;
-	}
+        h2.home{
+            font-size: 2rem;
+        }
 
+    .picture{
+        position: relative;
+        margin: auto;
+        margin-top: 130px;
+    }
+    
+    .arrow{
+        position: absolute;
+        background-image: url("../img/arrow.png");
+        height: 24px;
+        width: 28px;
+    }
+
+    a:hover {
+        &.arrow {
+            background-image: url("../img/hover_arrow.png");
+        }
+    }
+    
     }
 }
+
+

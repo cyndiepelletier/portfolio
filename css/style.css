@@ -5661,16 +5661,17 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
-  font-family: "Champagne & Limousines";
+  font-family: 'Raleway', sans-serif;
   background-image: url(../img/bg.jpg);
   background-repeat: repeat;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: "Champagne & Limousines"; }
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
 
 .main-content {
-  background-image: url("../img/bg-accueil.jpg");
+  background-image: url("../img/bg-accueil.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -5680,26 +5681,20 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 100vh;
     text-align: center; }
   .main-content h2.title {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     font-weight: normal;
-    margin-top: 40px; }
+    margin-top: 50px; }
   .main-content .arabesque-separator {
     background-image: url("../img/arabesque.png");
-    width: 73px;
-    height: 30px;
+    width: 53px;
+    height: 22px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px; }
-  .main-content .section-separator {
-    background-image: url("../img/separateur.jpg");
-    width: 1213px;
-    height: 1px;
-    margin: auto;
-    margin-top: 40px; }
 
 .footer-bg {
   position: absolute;
-  background-image: url("../img/bg-accueil.jpg");
+  background-image: url("../img/bg-accueil.png");
   background-size: 100%;
   background-repeat: no-repeat;
   bottom: 0;
@@ -5707,6 +5702,21 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   z-index: -1;
   transform: rotate(180deg); }
+
+@media only screen {
+  .section-separator {
+    background-image: url("../img/separateur_mobile.jpg");
+    width: 275px;
+    height: 1px;
+    margin: auto;
+    margin-top: 40px; } }
+
+@media only screen and (min-width:40.063em) {
+  .section-separator {
+    background-image: url("../img/separateur_tablette.jpg");
+    width: 924px;
+    height: 1px;
+    margin-top: 40px; } }
 
 @font-face {
   font-family: 'Champagne & Limousines';
@@ -5721,38 +5731,53 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-content section.home .profil {
   padding-top: 100px; }
-  .main-content section.home .profil h1.title {
+  .main-content section.home .profil h1.home {
+    font-family: 'Rouge Script', cursive;
     font-weight: bold;
-    font-size: 3rem; }
+    font-size: 9rem;
+    letter-spacing: 8px;
+    margin-top: 130px;
+    margin-bottom: 270px; }
+  .main-content section.home .profil h2.home {
+    font-size: 2rem; }
   .main-content section.home .profil .picture {
-    margin-top: 100px;
-    margin-bottom: 100px; }
+    position: relative;
+    margin: auto;
+    margin-top: 130px; }
+  .main-content section.home .profil .arrow {
+    position: absolute;
+    background-image: url("../img/arrow.png");
+    height: 24px;
+    width: 28px; }
+  .main-content section.home .profil a:hover.arrow {
+    background-image: url("../img/hover_arrow.png"); }
 
 body.menu-open nav.navigation {
   left: 0; }
 body.menu-open .main-content {
-  left: 200px; }
+  left: 180px; }
 
 nav.navigation {
   margin-top: 0;
   margin-left: 0;
-  width: 200px;
+  width: 180px;
   height: 100%;
   position: fixed;
   z-index: 1;
-  background-color: black;
+  background-color: #000000;
   transition: left 1s ease;
-  left: -200px; }
+  left: -180px; }
   nav.navigation ul.nav {
     list-style-type: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 60px; }
     nav.navigation ul.nav li {
-      color: #9ac1ea;
+      color: white;
       line-height: 50px;
       text-align: left;
-      width: 100%; }
+      width: 100%;
+      font-weight: normal; }
       nav.navigation ul.nav li a {
         color: inherit; }
   nav.navigation li.active a {
@@ -5763,7 +5788,7 @@ nav.navigation {
   z-index: 1;
   cursor: pointer;
   position: fixed;
-  color: white;
+  color: black;
   font-size: 2rem;
   margin-left: 2rem; }
 
@@ -5772,8 +5797,8 @@ nav.navigation {
     display: block;
     width: 100%;
     height: 50px;
-    opacity: 0.35;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 5px 0px #9b9b9b;
     left: 0;
     transition: none; }
     nav.navigation ul.nav {
@@ -5783,9 +5808,10 @@ nav.navigation {
         display: inline-block;
         text-align: center;
         margin-top: 0;
-        color: black; }
+        color: #000;
+        opacity: none; }
       nav.navigation ul.nav li.active a {
-        border-bottom: 1px solid black; }
+        border-bottom: 1px solid #000; }
   .hamburger {
     display: none; }
   body.menu-open nav.navigation {
@@ -5797,7 +5823,7 @@ nav.navigation {
 .main-content section.about .presentation {
   margin-top: 60px; }
   .main-content section.about .presentation p {
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
 .main-content section.about .interests p {
   width: 170px;
   margin: auto; }
@@ -5814,14 +5840,14 @@ nav.navigation {
   margin: auto;
   margin-bottom: 80px; }
 .main-content section.about .interests .columns h4.title_part {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 20px; }
 
 .main-content section.work ul.filters {
   list-style-type: none;
-  font-size: 1.3rem; }
+  font-size: 1.2rem; }
   .main-content section.work ul.filters li {
     cursor: pointer;
     position: relative;
@@ -5829,7 +5855,7 @@ nav.navigation {
     display: inline-block; }
   .main-content section.work ul.filters li.active {
     border-bottom: 1px solid black;
-    font-weight: bold; }
+    font-weight: 600; }
 .main-content section.work .mark1 {
   z-index: 0;
   position: absolute; }
@@ -5887,9 +5913,10 @@ nav.navigation {
       padding: 2em;
       width: 100%;
       opacity: 0;
-      padding: 1rem;
+      padding: 2.5rem;
       margin: 0;
       color: white;
+      font-size: 1.2rem;
       transition: opacity 0.35s, transform 0.35s;
       transform: translateY(10px); }
     .main-content section.work .work-container .mix .work .info::before {
@@ -5898,7 +5925,7 @@ nav.navigation {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, rgba(7, 215, 246, 0) 0%, rgba(9, 148, 169, 0.4) 75%);
+      background: linear-gradient(to bottom, rgba(7, 215, 246, 0) 0%, rgba(0, 0, 0, 0.7) 75%);
       content: '';
       opacity: 0;
       transform: translateY(50%);
@@ -5909,6 +5936,7 @@ nav.navigation {
   .main-content section.work .work-container .mix .work:hover .info h2 {
     opacity: 1;
     color: #fff;
+    font-weight: 400;
     transform: translateY(-50%) translateY(-40px); }
   .main-content section.work .work-container .mix .work:hover .info p {
     opacity: 1;
@@ -5927,7 +5955,7 @@ nav.navigation {
   margin-top: 40px; }
   .main-content section.contact .data p {
     padding-top: 30px;
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
 .main-content section.contact .social {
   padding-top: 70px; }
 .main-content section.contact .linkedin {
@@ -5946,8 +5974,8 @@ nav.navigation {
   background-image: url("../img/logos/gmail.png");
   height: 73px;
   width: 73px; }
-.main-content section.contact .insta {
-  background-image: url("../img/logos/insta.png");
+.main-content section.contact .behance {
+  background-image: url("../img/logos/behance.png");
   height: 73px;
   width: 73px; }
 .main-content section.contact .pinterest {
@@ -5965,14 +5993,14 @@ nav.navigation {
   background-image: url("../img/logos/hover_git.png"); }
 .main-content section.contact a:hover.gmail {
   background-image: url("../img/logos/hover_gmail.png"); }
-.main-content section.contact a:hover.insta {
-  background-image: url("../img/logos/hover_insta.png"); }
+.main-content section.contact a:hover.behance {
+  background-image: url("../img/logos/hover_behance.png"); }
 .main-content section.contact a:hover.pinterest {
   background-image: url("../img/logos/hover_pinterest.png"); }
 .main-content section.contact .cv {
   margin-top: 120px; }
   .main-content section.contact .cv a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 8px;
@@ -5980,6 +6008,6 @@ nav.navigation {
     text-decoration: none; }
 
 .footer p {
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   margin: 0; }

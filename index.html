@@ -9,6 +9,9 @@
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"  type="text/css" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
 
@@ -33,35 +36,35 @@
             &#9776;
         </div>
 
-        <div class="main-content"> <!-- div qui contient tout le contenu du site (sauf footer) -->
+        <div class="main-content"> 
             <!-- Accueil -->
 
             <section class="home" id="home">
 
-                <div class="profil"> <!-- Regroupement des éléments car ils on presque les même proporiété. -->
-                    <img src="img/nom.png" class="picture" alt="Photo">
-   <!--                 <h1 class="title"> Cyndie Pelletier</h1> -->
+                <div class="profil"> 
+                    <h1 class="home"> Cyndie Pelletier</h1> 
+                    <h2 class="home"> A la recherche d'un contrat de professionnalisation en tant qu'UX/UI Design</h2> 
 
-                    <div class="arabesque-separator"></div> <!-- Mettre l'image dans une div permet de pas charger l'image à chaque fois. Au lieu de mettre l'image en HTML, on la met dans la div / CSS -->
-
-                    <h2 class="title"> Etudiante en Communication Visuelle</h2>
+                    <div class="picture">               
+                        <a href="#about" class="arrow"></a>
+                    </div>
 
                 </div>
 
             </section>
 
-            <div class="section-separator"></div> <!-- Idem que pour l'arabesque : on l'a met dans une div / CSS et non dans l'HTML pour par que ça ça charge l'image à chaque fois. Div en dehors de la section car elle sépare les deux sections -->
+            <div class="section-separator" id="about"></div> 
 
-        <!-- A propos -->
-            <section class="about" id="about">
+        <!-- A propos --> 
+            <section class="about"  >
 
                 <div class="presentation">
                     <h2 class="title"> A propos </h2>
                     <div class="arabesque-separator"></div>
                     <p>
-                        Je suis <strong>Cyndie PELLETIER</strong>, une étudiante en Communication Visuelle pour validé mon Bachelor Chef de projet multimédia. </br>
-                        J'ai récemment intégré Melberries en tant que <strong>Web Designer</strong>pour un stage d'une durée de 6 mois. </br>
-                        A travers mon portfolio, découvrez ma personnalité, mes réalisations, mes compétences et n’hésitez pas à me <strong>contacter</strong>.
+                        Hello ! <strong>Créative et passionnée par le web</strong>, cela fait 3 ans que mes études se portent sur le multimédia et le design. Hé oui, j'adore ça ! </br>
+                        Je suis actuellement à la <strong>recherche d'un contrat de professionnalisation </strong> en tant qu'UX /UI Designer pour . </br>
+                        Si vous êtes curieux de connaître mes compétences, faites un tour plus bas pour découvrir mes projets, mon CV et pourquoi pas <strong>me contacter</strong>.
                     </p>
                 </div>
                 
@@ -72,8 +75,8 @@
                         </div>
                         <div class="title_separator"></div>
 
-                        <h4 class="title_part"> WebDesign </h4>
-                        <p>Passionée de WebDesign depuis 4 ans, j'aime élaborer une ergonomie intuitive pour l'utilisateur en essayant de lier créativité et efficacité de navigation</p>
+                        <h4 class="title_part"> Web Design </h4>
+                        <p>Passionée de WebDesign, j'aime élaborer une ergonomie intuitive pour l'utilisateur en essayant de lier créativité et originalité.</p>
                     </div>
 
                     
@@ -84,7 +87,7 @@
                         <div class="title_separator"></div>
 
                         <h4 class="title_part"> Esprit d'équipe </h4>
-                        <p>J'aime le travail en équipe. Cela permet de regrouper différentes compétences et avis pour faire avancer le projet le plus loin possible.</p>
+                        <p>Le travail en équipe est pour moi un facteur majeur dans mes projets. C'est la seule façon de mener un projet à bien !</p>
                     </div>
 
                     <div class="columns small-12 medium-4">
@@ -94,24 +97,19 @@
                         <div class="title_separator"></div>
 
                         <h4 class="title_part"> Créativité </h4>
-                        <p>Mon imagination est en évolution constante ce qui me permet d’avoir de l'originalité dans mes créations.</p>
-                    </div>
+                        <p>La curiosité, l'imagination et l'envie de toujours faire mieux sont mes ingrédients personnels pour vous satisfaire.</p> 
                 </div>
 
             </section>
 
-            <div class="section-separator"></div>
+            <div class="section-separator"  id="work"></div>
 
         <!-- Mes travaux -->
 
-            <section class="work" id="work">
+            <section class="work">
 
                 <h2 class="title">Mes travaux</h2>
                 <div class="arabesque-separator"></div>
-
-                <div class="mark1"> <img src="img/tache_1.png"> </div>
-                <div class="mark2"> <img src="img/tache_2.png"> </div>
-                <div class="mark3"> <img src="img/tache_3.png"> </div>
 
                 <ul class="filters">
                     <li class="filter" data-filter="all">Tous</li>
@@ -122,46 +120,54 @@
                 </ul>
 
                 <div class="work-container">
+                    <div class="mix web">
+                        <a href="img/work/the_next_creator.jpg" target="_blank">
+                            <div class="work">
+                                <img src="img/the_next_creator.jpg">
+                                <div class="info">
+                                    <h2>Maquette The Next Creator</h2>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="mix print">
+                        <a href="img/work/carte_visite.jpg" target="_blank">
+                            <div class="work">
+                                <img src="img/carte_visite.jpg">
+                                <div class="info">
+                                    <h2>Carte de visite pour un artisan menuisier</h2>
+                                    <p>Illustrator / InDesign</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="mix web">
+                        <a href="img/work/portfolio.jpg" target="_blank">
+                            <div class="work">
+                                <img src="img/portfolio.jpg">
+                                <div class="info">
+                                    <h2>Maquette de mon portfolio</h2>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                    </div>                        
                     <div class="mix print">
                         <a href="img/work/affiche_cinema.pdf" target="_blank">
                             <div class="work">
                                 <img src="img/affiche.jpg">
                                 <div class="info">
                                     <h2>Affiche de cinéma</h2>
-                                    <p>Projet fictif pour le Festival du film noir </p>
+                                    <p>Photoshop</p>
                                 </div>
                             </div>
                          </a>   
-                    </div>
-                    <div class="mix diverse">
-                         <a href="img/work/carnet_croquis.pdf" target="_blank">
-                            <div class="work">
-                                <img src="img/carnet_croquis.jpg">
-                                <div class="info">
-                                    <h2>Carnet de croquis</h2>
-                                    <p>Croquis de différentes oeuvres d'art</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    </div>                    
                     <div class="mix diverse">
                         <a href="img/work/blender.jpg" target="_blank">
                             <div class="work">
                                 <img src="img/blender.jpg">
                                 <div class="info">
-                                    <h2>Monsieur Patate et Bayonne de Toy Story</h2>
-                                    <p>Modélisation sous Blender</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="mix diverse">
-                        <a href="https://youtu.be/ANkHRsqNBj8" target="_blank">
-                            <div class="work">
-                                <img src="img/data_new.jpg">
-                                <div class="info">
-                                    <h2>Data news Magnum</h2>
-                                    <p>Réalisation avec after effect</p>
+                                    <h2>Monsieur Patate et Bayonne de Toy Story 3D</h2>
+                                    <p>Blender</p>
                                 </div>
                             </div>
                         </a>
@@ -171,8 +177,8 @@
                             <div class="work">
                                 <img src="img/icone_extia.jpg">
                                 <div class="info">
-                                    <h2>Icônes pour Extia</h2>
-                                    <p>Icônes représentant la cohésion et l'écoute</p>
+                                    <h2>Icônes écoute et cohésion</h2>
+                                    <p>Illustrator</p>
                                 </div>
                             </div>
                         </a>
@@ -183,7 +189,7 @@
                                 <img src="img/ihm.jpg">
                                 <div class="info">
                                     <h2>Interview IHM</h2>
-                                    <p>Montage d'une interview sur les IHM de demain</p>
+                                    <p>Première Pro</p>
                                 </div>
                             </div>
                         <a>
@@ -193,29 +199,19 @@
                             <div class="work">
                                 <img src="img/tabasco.jpg">
                                 <div class="info">
-                                    <h2>Affiches publicitaires Tabasco</h2>
-                                    <p>Déclinaison d'affiches pour Tabasco</p>
+                                    <h2>Campagne publicitaire Tabasco</h2>
+                                    <p>Photoshop</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="mix web">
-                        <a href="img/work/the_next_creator.jpg" target="_blank">
-                            <div class="work">
-                                <img src="img/the_next_creator.jpg">
-                                <div class="info">
-                                    <h2>Maquette The Next Creator</h2>
-                                    <p>Design du site The Next Creator</p>
-                                </div>
-                            </div>
                     </div>
                     <div class="mix diverse">
                         <a href="https://youtu.be/DgyDJKbd2Q8" target="_blank">
                             <div class="work">
                                 <img src="img/very_bad_game.jpg">
                                 <div class="info">
-                                    <h2>Pixilation ou stop motion</h2>
-                                    <p>Montage d'un stop motion </p>
+                                    <h2>Pixilation / stop motion</h2>
+                                    <p>Première Pro</p>
                                 </div>
                             </div>
                         </a>  
@@ -225,7 +221,7 @@
                             <div class="work">
                                 <img src="img/blockbuster.jpg">
                                 <div class="info">
-                                    <h2>Réalisation d'un projet pour faire le buzz en une semaine</h2>
+                                    <h2>Projet pour faire le buzz en une semaine</h2>
                                     <p>Résultat : encouragement du jury</p>
                                 </div>
                             </div>
@@ -238,7 +234,7 @@
                                 <img src="img/icone_tnc.jpg">
                                 <div class="info">
                                     <h2>Logo The Next Creator</h2>
-                                    <p>Logo pour la home du site</p>
+                                    <p>Illustrator</p>
                                 </div>
                             </div>
                         </a>
@@ -246,11 +242,11 @@
                 </div>
             </section>
 
-            <div class="section-separator"></div>
+            <div class="section-separator" id="contact"></div>
 
         <!-- Me contacter -->
 
-            <section class="contact" id="contact">
+            <section class="contact" >
                 <div class="data">
                     <h2 class="title"> Me contacter </h2>
                         <div class="arabesque-separator"></div>
@@ -258,12 +254,12 @@
                     <p>  cyndie.pelletier@gmail.com </p>
                 </div>
                 <div class="social">
-                    <a href="fr.linkedin.com/in/cyndiepelletier" class="linkedin" target="_blank"> </a> 
-                    <a href="" class="twitter"> </a>
-                    <a href="" class="git"> </a>
-                    <a href="cyndie.pelletier@gmail.com" class="gmail" target="_blank"> </a>
-                    <a href="" class="insta"> </a>
-                    <a href="" class="pinterest"></a>
+                    <a href="https://fr.linkedin.com/in/cyndiepelletier" class="linkedin" target="_blank"> </a> 
+                    <a href="https://twitter.com/CyndiePelletier" class="twitter" target="_blank"> </a>
+                    <a href="https://github.com/cyndiepelletier/portfolio" class="git" target="_blank"> </a>
+                    <a href="mailto:cyndie.pelletier@gmail.com" class="gmail" target="_blank"> </a>
+                    <a href="https://www.behance.net/cyndiepelletier" class="behance" target="_blank"> </a>
+                    <a href="https://fr.pinterest.com/pelletiercyndie/" class="pinterest" target="_blank"></a>
                  </div>
 
                  <div class="cv">  
@@ -300,6 +296,8 @@
                     $('body').toggleClass('menu-open');
                 })
             });
+
+
         </script>
     </body>
 </html>

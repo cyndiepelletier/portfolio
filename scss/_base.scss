@@ -1,15 +1,16 @@
 body {
-    font-family: "Champagne & Limousines";
+    font-family: 'Raleway', sans-serif;
     background-image:url(../img/bg.jpg);
     background-repeat: repeat;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: "Champagne & Limousines";
+h1,h2, h3, h4, h5, h6, p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 .main-content {
-    background-image: url("../img/bg-accueil.jpg");
+    background-image: url("../img/bg-accueil.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -23,32 +24,26 @@ h1, h2, h3, h4, h5, h6, p {
 
 
     h2.title {
-        font-size: 2.25rem;    
+        font-size: 1.8rem;    
         font-weight: normal;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .arabesque-separator {
         background-image: url("../img/arabesque.png");
-        width : 73px;  
-        height: 30px;
+        width : 53px;  
+        height: 22px;
         margin : auto; 
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    .section-separator {
-        background-image: url("../img/separateur.jpg");
-        width: 1213px;
-        height: 1px;
-        margin: auto;
-        margin-top: 40px;
-    }
+
 }
 
 .footer-bg {
     position: absolute;    
-    background-image: url("../img/bg-accueil.jpg");
+    background-image: url("../img/bg-accueil.png");
     background-size: 100%;
     background-repeat: no-repeat;
     bottom: 0;
@@ -57,3 +52,28 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: -1;
     transform: rotate(180deg);
 }
+
+@media #{$small-up} {
+    .section-separator {
+        background-image: url("../img/separateur_mobile.jpg");
+        width: 275px;
+        height: 1px;
+        margin: auto;
+        margin-top: 40px;
+
+    }
+}
+
+@media #{$medium-up} {
+    .section-separator {
+        background-image: url("../img/separateur_tablette.jpg");
+        width: 924px;
+        height: 1px;
+ 
+        margin-top: 40px;
+
+    }
+}
+
+
+

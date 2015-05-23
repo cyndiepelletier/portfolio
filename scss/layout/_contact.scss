@@ -5,7 +5,7 @@
 
     p {
         padding-top: 30px; 
-        font-size: 1.3rem;
+        font-size: 1.2rem;
        }
     }
 
@@ -37,8 +37,8 @@
 		width: 73px;
 	}	
 
-	.insta{
-		background-image: url("../img/logos/insta.png");
+	.behance{
+		background-image: url("../img/logos/behance.png");
 		height: 73px;
 		width: 73px;
 	}
@@ -75,8 +75,8 @@
 		background-image: url("../img/logos/hover_gmail.png");
 		}
 
-		&.insta {
-		background-image: url("../img/logos/hover_insta.png");
+		&.behance {
+		background-image: url("../img/logos/hover_behance.png");
 		}
 
 		&.pinterest {
@@ -89,7 +89,7 @@
 		margin-top: 120px;
 
 		a {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
 		padding : 8px;
