@@ -23,7 +23,7 @@ nav.navigation {
 
     ul.nav {
         list-style-type: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-top: 60px;
 
@@ -48,6 +48,7 @@ nav.navigation {
     li.active a span.text {
         padding-bottom: 5px;
         border-bottom: 1px solid white;
+        font-weight: bold;
     }
 
 }

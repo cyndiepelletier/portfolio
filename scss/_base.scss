@@ -1,13 +1,13 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Champagne', sans-serif;
     background-image:url(../img/bg.jpg);
     background-repeat: repeat;
     margin: 0;
 }
 
 h1,h2, h3, h4, h5, h6, p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-family: 'Champagne', sans-serif;
+    font-weight: normal;
 }
 
 .main-content {
@@ -23,8 +23,8 @@ h1,h2, h3, h4, h5, h6, p {
     }
 
     h2.title {
-        font-size: 1.8rem;    
-        font-weight: normal;
+        font-size: 2rem;    
+        font-weight: bold;
         margin-top: 50px;
     }
 

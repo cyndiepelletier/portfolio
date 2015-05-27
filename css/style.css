@@ -5661,14 +5661,14 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Champagne', sans-serif;
   background-image: url(../img/bg.jpg);
   background-repeat: repeat;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300; }
+  font-family: 'Champagne', sans-serif;
+  font-weight: normal; }
 
 .main-content {
   background-image: url("../img/bg-accueil.png");
@@ -5680,8 +5680,8 @@ h1, h2, h3, h4, h5, h6, p {
   .main-content section {
     text-align: center; }
   .main-content h2.title {
-    font-size: 1.8rem;
-    font-weight: normal;
+    font-size: 2rem;
+    font-weight: bold;
     margin-top: 50px; }
   .main-content .arabesque-separator {
     background-image: url("../img/arabesque.png");
@@ -5718,15 +5718,19 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 40px; } }
 
 @font-face {
-  font-family: 'Champagne & Limousines';
+  font-family: 'Champagne';
   font-style: normal;
   font-weight: normal;
-  src: local('Champagne & Limousines'), url('../fonts/champagne_limousines.woff') format('woff'); }
+  src: url('../fonts/champagne_limousines.woff') format('woff'), url('../fonts/champagne_limousines.ttf') format('ttf'); }
 
 @font-face {
-  font-family: 'Champagne & Limousines Bold';
+  font-family: 'Champagne';
   font-weight: bold;
-  src: local('Champagne & Limousines Bold'), url('../fonts/champagne_limousines_bold.woff') format('woff'); }
+  src: url('../fonts/champagne_limousines_bold.woff') format('woff'), url('../fonts/champagne_limousines_bold.ttf') format('ttf'); }
+
+@font-face {
+  font-family: 'mission-script';
+  src: url('../fonts/mission-script.woff') format('woff'), url('../fonts/mission-script.otf') format('otf'); }
 
 .main-content section.home {
   position: relative;
@@ -5734,15 +5738,14 @@ h1, h2, h3, h4, h5, h6, p {
   .main-content section.home .profil {
     min-height: 300px; }
     .main-content section.home .profil h1 {
-      font-family: 'Rouge Script', cursive;
-      font-weight: bold;
-      font-size: 120px;
-      letter-spacing: 8px;
+      font-family: 'mission-script';
+      font-size: 5rem;
+      letter-spacing: 10px;
       margin: 0;
-      padding-top: 130px; }
+      padding-top: 100px; }
     .main-content section.home .profil h2 {
       margin-top: 100px;
-      font-size: 30px; }
+      font-size: 1.8rem; }
     .main-content section.home .profil .arrow {
       position: absolute;
       background-image: url("../img/arrow.png");
@@ -5751,6 +5754,14 @@ h1, h2, h3, h4, h5, h6, p {
       bottom: 20px; }
     .main-content section.home .profil a:hover.arrow {
       background-image: url("../img/hover_arrow.png"); }
+    @media only screen and (min-width:40.063em) {
+      .main-content section.home .profil h1 {
+        font-family: 'mission-script';
+        font-size: 8rem;
+        padding-top: 220px; }
+      .main-content section.home .profil h2 {
+        margin-top: 250px;
+        font-size: 2rem; } }
 
 body.menu-open nav.navigation {
   left: 0; }
@@ -5770,7 +5781,7 @@ nav.navigation {
   left: -180px; }
   nav.navigation ul.nav {
     list-style-type: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-top: 60px; }
     nav.navigation ul.nav li {
@@ -5786,7 +5797,8 @@ nav.navigation {
         color: inherit; }
   nav.navigation li.active a span.text {
     padding-bottom: 5px;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid white;
+    font-weight: bold; }
 
 .hamburger {
   z-index: 1;
@@ -5831,10 +5843,11 @@ nav.navigation {
 .main-content section.about .presentation {
   margin-top: 60px; }
   .main-content section.about .presentation p {
-    font-size: 1.1rem; }
+    font-size: 1.3rem; }
 .main-content section.about .interests p {
   width: 170px;
-  margin: auto; }
+  margin: auto;
+  font-size: 1.2rem; }
 .main-content section.about .interests .columns .img {
   position: relative;
   margin: 2rem auto;
@@ -5855,7 +5868,7 @@ nav.navigation {
 
 .main-content section.work ul.filters {
   list-style-type: none;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
   .main-content section.work ul.filters li {
     cursor: pointer;
     position: relative;
@@ -5963,7 +5976,7 @@ nav.navigation {
   margin-top: 40px; }
   .main-content section.contact .data p {
     padding-top: 30px;
-    font-size: 1.2rem; }
+    font-size: 1.3rem; }
 .main-content section.contact .social {
   padding-top: 70px; }
 .main-content section.contact .linkedin {
@@ -6006,9 +6019,11 @@ nav.navigation {
 .main-content section.contact a:hover.pinterest {
   background-image: url("../img/logos/hover_pinterest.png"); }
 .main-content section.contact .cv {
-  margin-top: 120px; }
+  margin-top: 150px;
+  margin-bottom: 150px; }
   .main-content section.contact .cv a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 8px;
@@ -6016,6 +6031,7 @@ nav.navigation {
     text-decoration: none; }
 
 .footer p {
-  font-weight: 600;
+  font-weight: bold;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 20px; }

@@ -262,7 +262,7 @@
                  </div>
 
                  <div class="cv">
-                        <a href="img/work/CV PELLETIER Cyndie.pdf" target="_blank"> Télécharger mon CV </a>
+                        <a href="img/work/CV_PELLETIER_Cyndie.pdf" target="_blank"> Télécharger mon CV </a>
                 </div>
 
             </section>
@@ -280,53 +280,9 @@
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
         <script src="js/waypoint/noframework.waypoints.min.js"></script>
+        <script src="js/fck-ie.js"></script>
 
-        <script type="text/javascript">
-            $(function(){
+        <script src="js/app.js" ></script>
 
-                $('.arrow').click(function(){
-                    $('html, body').animate({
-                        scrollTop:$('#about').offset().top
-                    }, 'slow');
-
-                    $('.navigation ul.nav li').each(function(){
-                        $(this).removeClass('active');
-                    })
-                    $('li.about').addClass('active');
-                })
-
-                $('.navigation ul.nav li').click(function(){
-
-                    var id = $(this).find('a').attr('data-href');
-                    $('html, body').animate({
-                        scrollTop:$(id).offset().top
-                    }, 'slow');
-
-                    $('.navigation ul.nav li').each(function(){
-                        $(this).removeClass('active');
-                    })
-                    $(this).addClass('active');
-                });
-                $('.work-container').mixItUp();
-
-                $('.hamburger').on('click', function(){
-                    $('body').toggleClass('menu-open');
-                })
-
-                new Waypoint({
-                    element: document.getElementById('about'),
-                    handler: function(direction) {
-                        if (direction == 'down') {
-                            $('.navigation').removeClass('hidden')
-                        } else {
-                            $('.navigation').addClass('hidden');
-                        }
-                    }
-                })
-            });
-
-
-
-        </script>
     </body>
 </html>

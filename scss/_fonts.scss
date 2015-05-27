@@ -1,12 +1,20 @@
 @font-face {
-	font-family: 'Champagne & Limousines';
+	font-family: 'Champagne';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Champagne & Limousines'), url('../fonts/champagne_limousines.woff') format('woff');
+	src: url('../fonts/champagne_limousines.woff') format('woff'), 
+		url('../fonts/champagne_limousines.ttf')format('ttf');
 }
 
 @font-face {
-	font-family: 'Champagne & Limousines Bold';
+	font-family: 'Champagne';
 	font-weight: bold;
-	src: local('Champagne & Limousines Bold'), url('../fonts/champagne_limousines_bold.woff') format('woff');
+	src: url('../fonts/champagne_limousines_bold.woff') format('woff'),
+		url('../fonts/champagne_limousines_bold.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'mission-script';
+	src: url('../fonts/mission-script.woff') format('woff'),
+		url('../fonts/mission-script.otf') format('otf');
 }
